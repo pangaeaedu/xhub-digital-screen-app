@@ -1,0 +1,6 @@
+<resources>
+
+    <plurals name="times">
+        <item quantity="other">%1d次</item>
+    </plurals>
+</resources>

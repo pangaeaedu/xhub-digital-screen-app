@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapContentMainColorText" parent="WrapContent">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="WrpCtText16Sp" parent="WrapContentMainColorText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="WrpCtText18Sp" parent="WrapContentMainColorText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PangaeaRecyclerView">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+    <!-- AlertDialog -->
+    <style name="PangaeaAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="PangaeaAlertDialog.Prompt">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ExamInfoLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ExamInfoTitle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExamInfoValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/scrim_black</item>
+    </style>
+
+    <style name="ButtonMain">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pangaea_primary_button</item>
+        <item name="android:paddingHorizontal">48dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

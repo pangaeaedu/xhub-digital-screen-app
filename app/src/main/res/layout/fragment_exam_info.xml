@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="36dp"
+                android:src="@drawable/edm_avatar_default_48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/ExamInfoLayout">
+
+                    <TextView
+                        style="@style/ExamInfoTitle"
+                        android:text="Candidate No:" />
+
+                    <TextView
+                        android:id="@+id/tvCandidateNo"
+                        style="@style/ExamInfoValue"
+                        tools:text="123456" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ExamInfoLayout">
+
+                    <TextView
+                        style="@style/ExamInfoTitle"
+                        android:text="Candidate Name:" />
+
+                    <TextView
+                        android:id="@+id/tvCandidateName"
+                        style="@style/ExamInfoValue"
+                        tools:text="Jim Green" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ExamInfoLayout">
+
+                    <TextView
+                        style="@style/ExamInfoTitle"
+                        android:text="Subject:" />
+
+                    <TextView
+                        android:id="@+id/tvSubject"
+                        style="@style/ExamInfoValue"
+                        tools:text="Jim Green" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ExamInfoLayout">
+
+                    <TextView
+                        style="@style/ExamInfoTitle"
+                        android:text="Start By:" />
+
+                    <TextView
+                        android:id="@+id/tvStartTime"
+                        style="@style/ExamInfoValue"
+                        tools:text="14：00：00" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ExamInfoLayout">
+
+                    <TextView
+                        style="@style/ExamInfoTitle"
+                        android:text="End By:" />
+
+                    <TextView
+                        android:id="@+id/tvEndTime"
+                        style="@style/ExamInfoValue"
+                        tools:text="15：00：00" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStorage"
+            style="@style/ButtonMain"
+            android:layout_marginTop="50dp"
+            android:text="@string/open_storage"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

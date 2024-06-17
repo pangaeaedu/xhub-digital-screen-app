@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.XhubDigitalScreen" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.XhubDigitalScreen" parent="android:Theme.Material.Light.NoActionBar" >
+        <!-- Global -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
 </resources>

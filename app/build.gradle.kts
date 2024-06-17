@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("kotlin-parcelize")
     id("org.jetbrains.kotlin.android")
 }
 
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.pangaeaedu.xhub.digitalscreen"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -20,13 +21,22 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
+
     buildTypes {
-        release {
+        getByName("debug") {
+            buildConfigField("int", "LOG_LEVEL", "3")
+        }
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("int", "LOG_LEVEL", "7")
         }
     }
     compileOptions {
@@ -59,6 +69,13 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("androidx.databinding:viewbinding:8.2.0")
+    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:1.7.10")
+    implementation("org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.7.10")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

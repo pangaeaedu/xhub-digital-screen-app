@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">XhubDigitalScreen</string>
+
+    <string name="log_name">ETEC_XHUB</string>
+    <string name="exit_process">Exit</string>
+    <string name="no_exam">Currently no exam.</string>
+
+    <string name="current_exam">Current exam</string>
+    <string name="next_exam">The Next exam</string>
+    <string name="exam_status">Status:</string>
+    <string name="following_exam">The Following exam</string>
+    <string name="exam_remaining">Remaining: %s</string>
+    <string name="exam_start_by">Start by: %s</string>
+
+    <string name="verify_finger_print">Please verify your finger print</string>
+    <string name="verify_finger_print_failed">Verify finger print failed by %s(maximum 3 times).</string>
+    <string name="error_dialog_title">Notice</string>
+    <string name="exceed_max_times">You have exceeded the max verifying times. Call for help?</string>
+    <string name="call_for_help">Call for help</string>
+    <string name="help_is_called">Help is called</string>
+    <string name="next">next</string>
+    <string name="open_storage">Open Storage</string>
+    <string name="storage_is_opened">Storage is opened</string>
+    <string name="storage_opened">Storage opened</string>
+    <string name="storage_is_closed">Storage is closed</string>
+    <string name="agree_policy">I agree to the above terms and conditions</string>
+    <string name="next_with_count">Next(%d)</string>
+    <string name="goto_security_gate_tip">Please go to the security gate</string>
+
+    <plurals name="times">
+        <item quantity="zero">%1d times</item>
+        <item quantity="one">%1d time</item>
+        <item quantity="two">%1d times</item>
+        <item quantity="few">%1d times</item>
+        <item quantity="many">%1d times</item>
+        <item quantity="other">%1d times</item>
+    </plurals>
 </resources>
